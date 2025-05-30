@@ -1,0 +1,161 @@
+*{
+    margin: 0px;}
+body{
+    background-color: black;
+    color: white;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    background-color: black;
+    padding: 30px;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+nav ul li a:hover{
+    font-size: 18px;
+}
+.s1 .hamburger{
+    width: 30px;
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    display: none;
+}
+.s1{
+    background:linear-gradient(black, rgba(10,3,5,0)), url('backgroun.jpg');
+    padding: 100px;
+}
+.profil {
+    text-align: center;
+}
+.profil img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+/* section apropos */
+.s2{
+    padding: 15% ;
+}
+.presentation{
+    margin: auto;
+    .decouvre{
+        font-size: x-large;
+    }
+}
+.presentation h1{
+    font-size: 3rem;
+    color: aqua;
+    text-align: right;
+}
+.presentation h2{
+    font-size: 2.5rem;
+}
+.presentation img{
+    width: 300px;
+    border-radius: 10px;
+    float: left;
+    margin-right: 30px;
+}
+.info{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    border: 5px solid red;
+}
+.info div{
+    width: 50%;
+}
+.info strong{
+    color: aqua;
+}
+/* services */
+.s3{
+    padding: 10%;
+    text-align: center;
+    margin: auto;
+    .P1{
+        font-size: x-large;
+        text-align: left;
+        margin-bottom: 10px;
+    }
+}
+.s3 h1{
+    font-size: 3rem;
+    color: aqua;
+    text-align: right;
+}
+.s3 h2{
+    font-size: 2.5rem;
+    text-align: left;
+    margin-top: 0px;
+}
+.s3 h3{
+    color: red;
+}
+.serv{
+    display: flex;
+    margin-top: 6%;
+}
+.P1{
+    margin-left:6%;
+}
+.h2serv{
+    margin-left: 6%;
+}
+.carte{
+    border: 2px solid red;
+    margin: 0px 20px;
+}
+.s4{
+    text-align: center;
+    padding: 10%;
+}
+.s4 h1{
+    text-align: right;
+    font-size: 3rem;
+    color: aqua;
+}
+.s4 button{
+    border-radius: 50%;
+}
+.s4 img{
+    width: 50px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+@media screen and (max-width:700px) {
+    .s1 .hamburger{
+        display: block;
+    }
+    nav ul {
+        display: none;
+    }
+    nav ul.active {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        position: absolute;
+        top: 80px;
+        right: 50px;
+        background-color: black;
+        padding: 20px;
+        border: 1px solid red;
+    }   
+
+    .serv{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .carte{
+        margin-bottom: 10px;
+    }
+}
